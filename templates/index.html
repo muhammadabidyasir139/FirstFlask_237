@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="judul">Hello This Is Muhammad Abid</h1>
+      <div class="deskripsi">
+        <p>halo perkenalkan nama saya Muhammad Abid Yasir</p>
+        <p>NIM : 20230140237</p>
+        <p>masukan nama kamu untuk brekenalan</p>
+      </div>
+
+      <form action="" method="post">
+        <label for="name">Siapa nama kamu? : </label>
+        <br />
+        <input type="text" name="name" id="name" placeholder="masukan disini" />
+        <button type="submit">Kirim</button>
+      </form>
+
+      {% if response %}
+      <p class="response-label">{{ response }}</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
